@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS smart-tech;
-CREATE DATABASE smart-tech;
+DROP DATABASE IF EXISTS smart_tech;
+CREATE DATABASE smart_tech;

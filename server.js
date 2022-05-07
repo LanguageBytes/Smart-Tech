@@ -12,7 +12,7 @@ const hbs = handlebars.create();
 
 app.use(
   session({
-    secret: "",
+    secret: "tech",
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
