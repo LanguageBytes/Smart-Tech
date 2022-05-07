@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS smart-tech;
+CREATE DATABASE smart-tech;
