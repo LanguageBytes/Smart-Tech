@@ -68,10 +68,7 @@ header nav li {
   margin: 0 1rem;
 }
 
-/* Login Button Spacing */
-/*header nav li:last-child {
-  margin-left: -5px;
-}*/
+
 
 header.inner {
   background: var(--bg-color);
@@ -226,21 +223,9 @@ label {
     padding: 0.3rem !important;
   }
 
-  .search-form {
-    width: 100%;
-  }
 
-  input[type='search'] {
-    flex-basis: 100%;
-  }
 
-  .search-wrap h1 {
-    font-size: 2rem;
-  }
 
-  .search-wrap {
-    padding: 2.3rem;
-  }
 
   .products ul {
     flex-direction: column;
@@ -258,7 +243,7 @@ label {
   }
 }
 
-/* Smartphones */
+
 @media (max-width: 500px) {
   .container {
     padding: 1rem;
@@ -268,18 +253,9 @@ label {
     margin: 0 10px;
   }
 
-  .search-form {
-    display: flex;
-    flex-direction: column;
-  }
 
-  input[type='search'] {
-    flex-basis: 0;
-  }
 
-  .search-form i {
-    display: none;
-  }
+
 
   .form-wrap {
     padding: 1rem 2rem 2rem;
