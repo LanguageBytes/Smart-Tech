@@ -1,0 +1,36 @@
+<section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add A Product</h1>
+      <p>Add any new items you want to sell</p>
+      {{#each errors as |error|}}
+      <div class="error">
+        <p>{{text}}</p>
+      </div>
+      {{/each}}
+      <form class="addProducts">
+        <div class="input-group">
+          <label for="title">Product Name</label>
+          <input type="text" title="title" id="title" class="input-box" placeholder="eg. I Phone12 Pro, Apple Laptop , Apple Watch"
+            maxlength="100" value={{title}}>
+        </div>
+        
+        <div class="input-group">
+          <label for="price">Price </label>
+          <input type="number" title="price" id="price" class="input-box" placeholder="eg. 500, 5000, 10000" value={{price}}>
+        </div>
+        <div class="input-group">
+          <label for="description">Product Description</label>
+          <textarea title="description" id="description" class="input-box" placeholder="Describe the details of the Product"
+            rows="3">{{description}}</textarea>
+        </div>
+        <div class="mb-3">
+  <label for="formFileSm" class="form-label">Upload Picture for the</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+       
+        <input type="submit" value="Add Product" class="btn btn-reverse bg-primary">
+      </form>
+    </div>
+  </section>
+
+  <script src="./js/add-products.js"></script>
