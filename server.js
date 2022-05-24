@@ -1,39 +1,52 @@
+const path = require("path");
 const express = require("express");
 const session = require("express-session");
-const SequelizeStore = require("connect-session-sequelize")(session.Store);
-const handlebars = require("express-handlebars");
+const exphbs = require("express-handlebars");
+const bodyParser = require("body-parser");
+const routes = require("./controllers");
+const Handlebars = require("handlebars");
+const {
+  allowInsecurePrototypeAccess,
+} = require("@handlebars/allow-prototype-access");
 
-const router = require("./controllers");
-const sequelize = require("./config/connection");
+
+const sequelize = require("./config/database");
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const hbs = handlebars.create();
+const PORT = process.env.PORT || 500;
 
-app.use(
-  session({
-    secret: "tech",
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizeStore({
-      db: sequelize,
-    }),
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
+
+app.use(session(sess));
+
+
+app.engine(
+  "handlebars",
+  exphbs.engine({
+    handlebars: allowInsecurePrototypeAccess(Handlebars),
+    defaultLayout: "main",
   })
 );
-
-app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
-app.use(express.json());
+app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
-app.use(router);
+
+app.use(express.static(path.join(__dirname, "public")));
 
 
-sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`App listening on port: ${PORT}`);
-  });
+app.use(routes);
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, console.log(`Server Started on port ${PORT}`));
 });
-
-console.log();
