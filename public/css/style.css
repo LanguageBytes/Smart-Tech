@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #e6f0f4;
-  --primary-hover-color: #64a5b7;
+  --primary-hover-color: #032028;
   --bg-color: rgb(2, 8, 53);
   --box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
 }
@@ -12,6 +12,9 @@
   
 }
 
+.bg-navy{
+  background-color: rgb(4, 45, 117);
+}
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -51,6 +54,7 @@ a:hover {
   overflow: hidden;
   
 }
+
 
 .error {
   padding: 5px;
