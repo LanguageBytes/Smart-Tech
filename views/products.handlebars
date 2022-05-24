@@ -1,14 +1,14 @@
-<section id="products" class="container bg-dark">
-    <h1>Available Products</h1>
+<h1 class= "align-center black-text p-5"> Available Products</h1>
+<section id="products">
   {{#if products.length}}
     {{#each products}}
-    <div class="products bg-secondary p-3 border">
+    <div class="products p-3 border" class="container">
        <img class="card-img-top" src="https://images.wowcher.co.uk/images/deal/22631635/777x520/840346.jpg" alt="..." />
-      <h3>{{title}}</h3>
-      <p>{{description}}</p>
-      <ul>
+      <h1 class="align-center p-3">{{title}}</h3>
+       <h3 class="p-3 ">{{description}}</p>
+      <ul class="p-3">
         <li>Price: {{price}}</li>
-        <li><a href="" class="btn btn-reverse bg-primary">Buy Now</a></li>
+         <a href="" class="btn-buy">Buy Now</a>
       </ul>
       
     </div>

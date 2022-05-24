@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 :root {
-  --primary-color: #568c9b;
+  --primary-color: #e6f0f4;
   --primary-hover-color: #64a5b7;
-  --bg-color: rgb(21, 107, 21);
+  --bg-color: rgb(2, 8, 53);
   --box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
 }
 
@@ -24,6 +24,13 @@ ul {
   padding: 0;
 }
 
+.nav-text {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -33,6 +40,10 @@ a:hover {
   color: var(--primary-color);
 }
 
+.align-center {
+  justify-content: center;
+  display:flex;
+}
 .container {
   max-width: 960px;
   padding: 1rem 4rem;
@@ -69,7 +80,6 @@ header nav li {
 }
 
 
-
 header.inner {
   background: var(--bg-color);
   border-bottom: 10px solid var(--primary-color);
@@ -79,27 +89,45 @@ header.inner {
 
 
 .btn {
-  color: rgb(63, 53, 53);
+  color: rgb(14, 7, 7);
   padding: 0.6rem;
   border: 1px solid rgb(71, 61, 61);
   transition: all 0.7s;
+  font-size: 20px;
+  width: 50%;
 }
 
-
-
 .btn:hover {
-  background: var(--primary-color);
+  background: rgb(189, 215, 228);
   border: 1px solid var(--primary-color);
-  color: #fff;
+  color: rgb(79, 76, 114);
+}
+
+.btn-buy {
+  background: rgb(5, 46, 67);
+  border: 1px solid var(--primary-color);
+  color: rgb(242, 241, 255);
+  padding: 5%;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 0.7s;
+  font-size: 25px;
+  width: 25%;
+  height: 5%;
 }
 
 .btn-reverse {
-  background: var(--primary-color);
   border: 1px solid var(--primary-color);
+  text-align: center;
+  margin-top: 2%;
+  padding: 0.5rem;
+  color: rgb(14, 7, 7);
+  background-color: rgb(230, 242, 248);
+  width: 50%;
 }
 
 .btn-reverse:hover {
-  background: var(--primary-hover-color);
+  background: white;
   border: 1px solid var(--primary-hover-color);
 }
 body {
@@ -125,8 +153,6 @@ body {
   }
 
 
-
-
 .products {
   background: var(--primary-color);
   border-bottom: 4px solid var(--primary-color);
@@ -137,6 +163,11 @@ body {
   margin-bottom: 1rem;
   box-shadow: var(--box-shadow);
   flex-direction:var(--bg-color);
+  
+}
+
+.black-text {
+  color:black;
 }
 
 .products ul {
@@ -148,10 +179,10 @@ body {
 }
 
 .product {
-    background:rgb(21, 107, 21);
+    background:rgb(232, 237, 238);
     border-bottom: 4px solid var(--primary-color);
     color: rgb(9, 15, 15);
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -224,9 +255,6 @@ label {
   }
 
 
-
-
-
   .products ul {
     flex-direction: column;
   }
@@ -252,9 +280,6 @@ label {
   header nav li {
     margin: 0 10px;
   }
-
-
-
 
 
   .form-wrap {
