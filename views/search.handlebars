@@ -1,0 +1,24 @@
+<section id="products" class="container">
+    <h1>Search Results</h1>
+  {{#if products.length}}
+    {{#each products}}
+    <div class="products">
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+      <ul>
+        <li>price: {{price}}</li>
+        <li><a href="mailto:{{contact_email}}" class="btn btn-reverse">Apply Now</a></li>
+      </ul>
+      {{!-- <div class="tech">
+        <small>Technologies Needed: <span>{{technologies}}</span></small>
+      </div> --}}
+    </div>
+    {{/each}}
+
+    {{else}}
+    <p>No results available with that technology!</p>
+    {{/if}}
+    
+
+    
+  </section>
