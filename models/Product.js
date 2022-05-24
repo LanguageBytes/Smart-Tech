@@ -24,6 +24,12 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+    img_src: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "/images/placeholder.jpg",
+    },
   
     user_id: {
       type: DataTypes.INTEGER,
