@@ -1,0 +1,25 @@
+<section id="products" class="container bg-dark">
+    <h1>Welcome to our Products</h1>
+  {{#if products.length}}
+    {{#each products}}
+    <div class="products bg-secondary p-3 border">
+       <img class="card-img-top" src="https://images.wowcher.co.uk/images/deal/22631635/777x520/840346.jpg" alt="..." />
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+      <ul>
+        <li>Price: {{price}}</li>
+        <li><a href="" class="btn btn-reverse bg-primary">Buy</a></li>
+      </ul>
+      
+    </div>
+    
+    {{/each}}
+
+    {{else}}
+    <p>No products available</p>
+    {{/if}}
+  
+  
+
+</div>
+</div>
