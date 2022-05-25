@@ -1,0 +1,36 @@
+{
+  "name": "smart-tech",
+  "version": "1.0.0",
+  "description": "Technology e-commerce marketplace\r https://makeschool.org/mediabook/oa/tutorials/make-tweets/start-an-express-project-z9Y=/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanguageBytes/Smart-Tech.git"
+  },
+  "keywords": [
+    "tech"
+  ],
+  "author": "Hassan and Sarah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanguageBytes/Smart-Tech/issues"
+  },
+  "homepage": "https://github.com/LanguageBytes/Smart-Tech#readme",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "connect-session-sequelize": "^7.1.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.20.0"
+  }
+}

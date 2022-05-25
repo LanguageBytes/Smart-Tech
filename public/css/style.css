@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 :root {
-  --primary-color: #568c9b;
-  --primary-hover-color: #64a5b7;
-  --bg-color: rgb(21, 107, 21);
+  --primary-color: #e6f0f4;
+  --primary-hover-color: #032028;
+  --bg-color: rgb(2, 8, 53);
   --box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
 }
 
+<<<<<<< HEAD
+=======
+* {
+  box-sizing: border-box;
+  
+}
+
+.bg-navy{
+  background-color: rgb(4, 45, 117);
+}
+>>>>>>> 1aeeeb2df1d974e09c1d0a728903441909bda2ec
 body {
   width: 100%;
   display: flex;
@@ -37,6 +48,13 @@ ul {
   padding: 0;
 }
 
+.nav-text {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -46,11 +64,16 @@ a:hover {
   color: var(--primary-color);
 }
 
+.align-center {
+  justify-content: center;
+  display:flex;
+}
 .container {
   width: 100%;
   
   
 }
+
 
 .error {
   padding: 5px;
@@ -80,7 +103,6 @@ header nav li {
 }
 
 
-
 header.inner {
   background: var(--bg-color);
   border-bottom: 10px solid var(--primary-color);
@@ -90,27 +112,45 @@ header.inner {
 
 
 .btn {
-  color: rgb(63, 53, 53);
+  color: rgb(14, 7, 7);
   padding: 0.6rem;
   border: 1px solid rgb(71, 61, 61);
   transition: all 0.7s;
+  font-size: 20px;
+  width: 50%;
 }
 
-
-
 .btn:hover {
-  background: var(--primary-color);
+  background: rgb(189, 215, 228);
   border: 1px solid var(--primary-color);
-  color: #fff;
+  color: rgb(79, 76, 114);
+}
+
+.btn-buy {
+  background: rgb(5, 46, 67);
+  border: 1px solid var(--primary-color);
+  color: rgb(242, 241, 255);
+  padding: 5%;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 0.7s;
+  font-size: 25px;
+  width: 25%;
+  height: 5%;
 }
 
 .btn-reverse {
-  background: var(--primary-color);
   border: 1px solid var(--primary-color);
+  text-align: center;
+  margin-top: 2%;
+  padding: 0.5rem;
+  color: rgb(14, 7, 7);
+  background-color: rgb(230, 242, 248);
+  width: 50%;
 }
 
 .btn-reverse:hover {
-  background: var(--primary-hover-color);
+  background: white;
   border: 1px solid var(--primary-hover-color);
 }
 
@@ -125,8 +165,6 @@ header.inner {
 
 
 
-
-
 .products {
   background: var(--primary-color);
   border-bottom: 4px solid var(--primary-color);
@@ -137,6 +175,11 @@ header.inner {
   margin-bottom: 1rem;
   box-shadow: var(--box-shadow);
   flex-direction:var(--bg-color);
+  
+}
+
+.black-text {
+  color:black;
 }
 
 
@@ -204,7 +247,22 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
  
 }
 
+<<<<<<< HEAD
 
+=======
+.product {
+    background:rgb(232, 237, 238);
+    border-bottom: 4px solid var(--primary-color);
+    color: rgb(9, 15, 15);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+    flex-direction:var(--bg-color);
+   
+  }
+>>>>>>> 1aeeeb2df1d974e09c1d0a728903441909bda2ec
 
 .products li {
   margin-right: 9.5rem;
@@ -268,9 +326,6 @@ label {
   }
 
 
-
-
-
   .products ul {
     flex-direction: column;
   }
@@ -296,9 +351,6 @@ label {
   header nav li {
     margin: 0 10px;
   }
-
-
-
 
 
   .form-wrap {
