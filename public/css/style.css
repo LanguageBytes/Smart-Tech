@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
 :root {
-  --primary-color: #568c9b;
+  --primary-color: #e6f0f4;
   --primary-hover-color: #64a5b7;
-  --bg-color: rgb(21, 107, 21);
+  --primary-hover-color: #032028;
+  --bg-color: rgb(2, 8, 53);
   --box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
 }
 
@@ -158,7 +158,8 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid .product-image img{width:100%;height:auto}
 .product-grid .pic-1{opacity:1;transition:all .3s ease-out 0s}
 .product-grid:hover .pic-1{opacity:1}
-
+.product-grid .pic-2{opacity:0;position:absolute;top:0;left:0;transition:all .3s ease-out 0s}
+.product-grid:hover .pic-2{opacity:1}
 .product-grid .social{width:150px;padding:0;margin:0;list-style:none;opacity:0;transform:translateY(-50%) translateX(-50%);position:absolute;top:60%;left:50%;z-index:1;transition:all .3s ease 0s}
 .product-grid:hover .social{opacity:1;top:50%}
 .product-grid .social li{display:inline-block}
