@@ -1,46 +1,47 @@
-  <div class="col mb-5">
-      {{#each products}}
-                        <div class="products  p-3 border">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://image.coolblue.nl/840x473/content/500607d0e11d53c62af7184e5f9a4ef9" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-2">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="product">{{title}}</h5>
-                                     <p>{{description}}</p>
-                                    
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-bold ">${{price}}</span>
-                                   
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                    
-    
-     {{!-- {{#each products}}
-    <div class="products bg-secondary p-3 border">
-       <img class="card-img-top" src="https://www.monsterinsights.com/wp-content/uploads/2019/11/breathtaking-online-shopping-statistics-you-never-knew.png" alt="..." />
-      <h3>{{title}}</h3>
-      <p>{{description}}</p>
-      <ul>
-        <li>Price: {{price}}</li>
-        <li><a href="" class="btn btn-reverse bg-primary">Buy</a></li> --}}
-      </ul>
+<div class="demo6">
+     {{#if products.length}}
+     {{#each products}}
+    <h3 class="h3">shopping Demo-1 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="https://cdn.shopify.com/s/files/1/0116/2762/6596/products/07.jpg?v=1650339043">
+                       
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">20%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">{{title}}</a></h3>
+                    {{description}}
+                    <div class="price">$16.00
+                        <span>{{price}}</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Buy</a>
+                </div>
+            </div>
+        </div>
       
-    </div>
-    
-    {{/each}}
+<hr>
+  {{/each}}
+
+   {{else}}
+    <p>No products available</p>
+    {{/if}}
+
+
+      
