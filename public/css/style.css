@@ -148,6 +148,13 @@ header.inner {
   margin-top: 10px;
 }
 
+
+.login-form {
+  background-color: #ffffff;
+  padding: 100px;
+  margin-top: 10px;
+}
+
 .place {
 padding-bottom:5px;
 margin: 5px;
