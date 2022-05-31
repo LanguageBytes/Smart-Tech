@@ -140,9 +140,14 @@ header.inner {
     line-height: 1.2;
   }
 
-
 .nav-link{
   color:white!important;
+}
+
+.signup-form {
+  background-color: #ffffff;
+  padding: 100px;
+  margin-top: 10px;
 }
 
 .place {
