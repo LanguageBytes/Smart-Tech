@@ -4,6 +4,8 @@ const newFormHandler = async (event) => {
   const title = document.querySelector("#title").value.trim();
   const description = document.querySelector("#description").value.trim();
   const price = document.querySelector("#price").value.trim();
+  const image = document.querySelector("#image").value.trim();
+
 
 
   if (title && description && price) {
@@ -13,6 +15,7 @@ const newFormHandler = async (event) => {
         title,
         description,
         price,
+        image,
        
       }),
       headers: {

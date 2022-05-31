@@ -33,6 +33,8 @@ body {
   font-weight: bold;
 }
 
+/* Text */
+
 ul {
   list-style: none;
   padding: 0;
@@ -43,9 +45,19 @@ a {
   text-decoration: none;
 }
 
-
 a:hover {
   color: var(--primary-color);
+}
+
+h2 {
+  font-family: "lato"
+}
+h3 {
+  font-family: "lato";
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
 }
 
 .container {
@@ -54,20 +66,8 @@ a:hover {
   
 }
 
-.homepage {
-  font-family: "Roblox";
-}
+/* Header */
 
-.error {
-  padding: 5px;
-  border: #777 dotted 1px;
-  margin-bottom: 15px;
-}
-
-h4 {
-  font-family: 'Roblox';
-  font-size: 10px;
-}
 
 header {
   display: flex;
@@ -89,16 +89,6 @@ header nav li {
   margin: 0 1rem;
 }
 
-h2 {
-  font-family: "lato"
-}
-h3 {
-  font-family: "lato";
-  font-size: 40px;
-  justify-content: center;
-  text-align: center;
-  padding: 40px;
-}
 
 header.inner {
   background: var(--bg-color);
@@ -132,7 +122,15 @@ header.inner {
   border: 1px solid var(--primary-hover-color);
 }
 
+.homepage {
+  font-family: "Roblox";
+}
 
+.error {
+  padding: 5px;
+  border: #777 dotted 1px;
+  margin-bottom: 15px;
+}
 
 .display-1 {
     font-size: calc(1.625rem + 4.5vw);
@@ -229,6 +227,8 @@ color:white;
 .fa-brands:hover{
 color: #F68116;
 }
+
+/* Contact */
 
 .contact-section {
 display: flex;
@@ -469,7 +469,6 @@ label {
   header nav li {
     margin: 0 10px;
   }
-
 
   .form-wrap {
     padding: 1rem 2rem 2rem;

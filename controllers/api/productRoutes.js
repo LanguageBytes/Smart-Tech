@@ -5,7 +5,7 @@ const Product = require("../../models/Product");
 
 // Add new product
 router.post("/newAdd", (req, res) => {
-  let { title, price, description} = req.body;
+  let { title, price, description, image} = req.body;
   let errors = [];
   console.log(req.body)
   if (!title) {
@@ -18,7 +18,9 @@ router.post("/newAdd", (req, res) => {
   if (!price) {
     errors.push({ text: "Please add Price" });
   }
-
+  if (!image) {
+    errors.push({ text: "Please add an image" });
+  }
 //   any errors
   if (errors.length > 0) {
     res.render("add", {
@@ -26,6 +28,7 @@ router.post("/newAdd", (req, res) => {
        title,
       price,
       description,
+      image,
     });
   } else {
     if (!price) {
@@ -34,15 +37,12 @@ router.post("/newAdd", (req, res) => {
       price = `£${price}`;
     }
   }
-
- 
-
   
   Product.create({
     title: req.body.title,
     description: req.body.description,
     price: req.body.price,
- 
+    image: req.body.image,
   })
     .then((Product) => res.status(200).json(Product))
     .catch((err) => console.log(err));

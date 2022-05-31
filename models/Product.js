@@ -20,15 +20,15 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     price: {
       type: DataTypes.STRING,
       allowNull: false,
     },
 
-    img_src: {
+    image: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "/images/placeholder.jpg",
     },
   
     user_id: {
