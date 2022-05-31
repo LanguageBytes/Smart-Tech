@@ -4,8 +4,9 @@ const response = await fetch(`/api/products/newAdd`, {
       title,
       description,
       price,
-     
+      image,
     }),
+    
     headers: {
       "Content-Type": "application/json",
     },
