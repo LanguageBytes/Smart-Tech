@@ -13,19 +13,20 @@ body {
   align-items: flex;
   justify-content: center;
   flex-direction: column;
-  background: #ccd4e1; /* fallback for old browsers */
-  
-
+  background: #ffffff; /* fallback for old browsers */
 }
+
 @font-face {
   font-family: "MemphisRiver";
   src: url(fonts/MemphisRiver.ttf) format("truetype");
 }
+
 @font-face {
-  font-family: "Roblox";
-  src: url(fonts/Roblox-Font-Regular.ttf) format("truetype");
+  font-family: "Poppins";
+  src: url(fonts/Poppins-Font-Regular.ttf) format("truetype");
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Roblox";
   src: url(fonts/Roblox-Font-Bold.ttf) format("truetype");
@@ -42,6 +43,7 @@ a {
   text-decoration: none;
 }
 
+
 a:hover {
   color: var(--primary-color);
 }
@@ -52,12 +54,20 @@ a:hover {
   
 }
 
+.homepage {
+  font-family: "Roblox";
+}
+
 .error {
   padding: 5px;
   border: #777 dotted 1px;
   margin-bottom: 15px;
 }
 
+h4 {
+  font-family: 'Roblox';
+  font-size: 10px;
+}
 
 header {
   display: flex;
@@ -79,7 +89,16 @@ header nav li {
   margin: 0 1rem;
 }
 
-
+h2 {
+  font-family: "lato"
+}
+h3 {
+  font-family: "lato";
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
 
 header.inner {
   background: var(--bg-color);
@@ -95,7 +114,6 @@ header.inner {
   border: 1px solid rgb(71, 61, 61);
   transition: all 0.7s;
 }
-
 
 
 .btn:hover {
@@ -123,22 +141,22 @@ header.inner {
   }
 
 
-
 .nav-link{
   color:white!important;
 }
-
 
 .place {
 padding-bottom:5px;
 margin: 5px;
 }
-.img-fluid{
+
+.img-fluid {
 border-radius: 5px;
 display: block;
-width: 500px;
+width: 900px;
 height: 500px;
 }
+
 .pic {
 position: relative;
 margin-top: 150px;
@@ -148,18 +166,18 @@ height: 500px;
 
 .container h4{
   margin-top: 150px;
-  font-size: 150px;
+  font-size: 100px;
   font-weight: 20px;
-  color:#147dc9;
-  font-family: "Roblox";
+  color:#012641;
+  font-family: "lato";
 }
 
 .container p{
   margin-top: 40px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 20px;
   color:#0e1405;
-  font-family: "Roblox";
+  font-family: "lato";
   text-align: center;
 }
 
@@ -238,17 +256,14 @@ transition: transform 0.3s ease-out;
 transform: translateY(4px);
 }
 
-h3.h3{
-  text-align:center;
-  margin:1em;
-  text-transform:capitalize;
-  font-size:3.7em;
-  font-family: "Roblox" style;
-}
 
 .product-grid8{
-  font-family:Poppins,sans-serif;position:relative;
-  z-index:1}
+  font-family:Poppins,sans-serif;
+  position:relative; 
+  z-index:1;
+  padding: 60px;}
+  
+
 .product-grid8 .product-image8{
   border:1px solid #e4e9ef;
   position:relative;
@@ -257,9 +272,12 @@ h3.h3{
 .product-grid8:hover .product-image8
 {box-shadow:0 0 10px rgba(0,0,0,.15)
 }
+
 .product-grid8 .product-image8 a
 {
-  display:block
+  display:block;
+  width: 100%;
+  height: 100%;
 }
 
 .product-grid8 .product-image8 img
@@ -318,8 +336,8 @@ h3.h3{
   transition:all .3s
 }
 
-.product-grid8 .describtion{color:rgba(0,0,0,.5);font-size:15px;padding-left:35px;margin:0 0 15px;display:block;position:relative}
-.product-grid8 .describtion:before{content:'';height:1px;width:25px;background-color:rgba(0,0,0,.5);transform:translateY(-50%);position:absolute;top:50%;left:0}
+.product-grid8 .descritpion{color:rgba(0,0,0,.5);font-size:15px;padding-left:35px;margin:0 0 15px;display:block;position:relative}
+.product-grid8 .description:before{content:'';height:1px;width:25px;background-color:rgba(0,0,0,.5);transform:translateY(-50%);position:absolute;top:50%;left:0}
 .product-grid8 .title{
   font-size:16px;
   font-weight:400;
@@ -411,7 +429,6 @@ label {
   margin-bottom: 1.2rem;
 }
 
-
 @media (max-width: 800px) {
   .container {
     padding: 1rem 2rem;
@@ -473,11 +490,11 @@ label {
 
 .footer h2{
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 20px;
   margin: 0.5rem;
   color: #f4f4f4;
   text-align: center;
-  font-family:monospace;
+  font-family:"lato";
 
 }
 
