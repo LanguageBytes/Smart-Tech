@@ -13,16 +13,22 @@
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
                         <li><a href="" class="fa fa-shopping-cart"></a></li>
                     </ul>
-                    <span class="product-discount-label">20%</span>
+                 
                 </div>
                 <div class="product-content">
                    <h3 class="title"><a href="#">{{title}}</a></h3>
                     <span class="description">{{description}}</span>
                     <div class="price">£{{price}}
                     </div>
-                    <a class="buy-icon" href="">Buy Now <i class="fa fa-angle-right icon"></i></a>
+                    <a class="buy-icon" href="/homepage">Back to homepage<i class="fa fa-angle-right icon"></i></a>
+                     </div>
+  <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
+</div>
+     <script src="./js/deleteProduct.js"></script>           
                 </div>      
     </div>
 </div>
-<br> </br>
+
 {{/each}}
+
+

@@ -49,4 +49,25 @@ router.post("/newAdd", (req, res) => {
 });
 
 
+router.delete("/delete", async (req, res) => {
+  try {
+    const productData = await Product.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    if (!productData) {
+      res.status(404).json({ message: "No project found with this id!" });
+      return;
+    }
+
+    res.status(200).json(productData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 module.exports = router;
