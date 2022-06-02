@@ -6,9 +6,16 @@ Product.belongsTo(User, {
   onDelete: "CASCADE",
 });
 
+// Product.belongsToMany(User, {
+//   through: {
+//     model: user_id,
+//     unique: false,
+//   },
+// });
+
 User.hasMany(Product, {
   foreignKey: "user_id",
-  // onDelete: "CASCADE",
+  onDelete: "CASCADE",
 });
 
 module.exports = { Product, User };
