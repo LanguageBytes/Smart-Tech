@@ -26,5 +26,5 @@ https://makeschool.org/mediabook/oa/tutorials/make-tweets/start-an-express-proje
 
 ## Heroku Deployed
 
-https://smart-tech2.herokuapp.com/
+https://smart-tech3.herokuapp.com/
 
