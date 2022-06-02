@@ -29,7 +29,6 @@ Product.init(
     image: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "/images/placeholder.jpg",
     },
   
     user_id: {
