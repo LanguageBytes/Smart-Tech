@@ -5,6 +5,7 @@ const exphbs = require("express-handlebars");
 const bodyparser = require("body-parser");
 const routes = require("./controllers");
 const Handlebars = require("handlebars");
+
 const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");

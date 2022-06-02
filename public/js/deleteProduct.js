@@ -1,18 +1,13 @@
-const newFormHandler = async (event) => {
-  event.preventDefault();
+const delButtonHandler = async (event) => {
+  if (event.target.hasAttribute('data-id')) {
+    const id = event.target.getAttribute('data-id');
 
-  const title = document.querySelector("#title").value.trim();
-  const description = document.querySelector("#description").value.trim();
-  const price = document.querySelector("#price").value.trim();
-  const image = document.querySelector("#image").value.trim();
-
-  if (title && description && price && image) {
-    const response = await fetch(`/api/products/delete`, {
+    const response = await fetch(`/api/allProducts/${id}`, {
       method: 'DELETE',
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace("");
     } else {
       alert('Failed to delete the product');
     }
@@ -20,5 +15,5 @@ const newFormHandler = async (event) => {
 };
 
   document
-  .querySelector('.product-grid8')
-  .addEventListener('click', delButtonHandler)
+  .querySelector('.deleteProducts')
+  .addEventListener('click', delButtonHandler);

@@ -3,6 +3,7 @@
     <h3 class="align-center">Products</h3>
        {{#each products}}
         <div>
+            <div class="deleteProducts">
             <div class="product-grid8">
                 <div class="product-image8">
                  
@@ -20,15 +21,15 @@
                     <span class="description">{{description}}</span>
                     <div class="price">£{{price}}
                     </div>
-                    <a class="buy-icon" href="/homepage">Back to homepage<i class="fa fa-angle-right icon"></i></a>
+                    <a class="buy-icon" href="/">Back to homepage<i class="fa fa-angle-right icon"></i></a>
                      </div>
-  <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
-</div>
-     <script src="./js/deleteProduct.js"></script>           
-                </div>      
+                     <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
+                     </div>
+            
+    </div>      
     </div>
 </div>
 
 {{/each}}
-
-
+</div>
+  <script src="./js/deleteProduct.js"></script>  

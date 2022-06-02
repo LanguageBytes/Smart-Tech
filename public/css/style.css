@@ -277,6 +277,7 @@ transform: translateY(4px);
   
 
 .product-grid8 .product-image8{
+  width: 900px;
   border:1px solid #e4e9ef;
   position:relative;
   transition:all .3s ease 0s}
@@ -288,8 +289,8 @@ transform: translateY(4px);
 .product-grid8 .product-image8 a
 {
   display:block;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 50%;
 }
 
 .product-grid8 .product-image8 img
@@ -297,10 +298,7 @@ transform: translateY(4px);
   width:100%;
   height:auto
 }
-.product-grid8 .pic-1{
-  opacity:1;
-  transition:all .5s ease-out 0s
-}
+
 
 
 .product-grid8 .social{
@@ -354,17 +352,7 @@ transform: translateY(4px);
   border-color:#000
 }
 
-.product-grid8 .product-discount-label{
-  display:block;
-  padding:4px 15px 4px 30px;
-  color:#fff;
-  background-color:#0081c2;
-  position:absolute;
-  top:10px;
-  right:0;
-  -webkit-clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);
-  clip-path:polygon(34% 0,100% 0,100% 100%,0 100%)
-}
+
 
 .product-grid8 .product-content{
   padding:20px 0 0;
@@ -372,11 +360,12 @@ transform: translateY(4px);
 
 .product-grid8 .price{
   color:rgb(24, 22, 41);
-  font-size:  25px;
-  font-weight:400;
+  font-size:  30px;
+  font-weight:800;
   margin-bottom:8px;
   text-align: center;
-  transition:all .3s
+  transition:all .3s;
+ 
 }
 
 .product-grid8 .descritpion{
@@ -407,7 +396,8 @@ transform: translateY(4px);
   transition:all .3s ease 0s
 }
 .product-grid8 .title a{
-  color:rgb(70, 92, 206)
+  color:rgb(70, 92, 206);
+  font-size: 25px;
 }
 
 .product-grid8 .title a:hover{
