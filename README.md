@@ -10,16 +10,24 @@ Smart tech is a simple e-commerce marketplace website on which users can adverti
 ## User Story
 
 ```md
-AS a user
-I WANT a 
-SO THAT
 
-GIVEN 
-WHEN I 
-THEN I 
+AS an avid tech user
+I WANT to be able to browse and list technology products
+SO THAT I can purchase and sell them
 
-WHEN 
-THEN 
+WHEN I click on the log in page
+THEN I am prompted to create an account or sign in
+
+WHEN I am signed in
+THEN I am presented with a dashboard of products 
+
+WHEN I click on add a product
+THEN I am able to enter the details of the item I want to sell 
+
+WHEN I click on the submit button
+THEN my product will be listed on the page
+
+
 
 ```
 
@@ -61,14 +69,14 @@ Run the following commands in the terminal:
 
 ## Future Developments
 
-If we have more time, we would like to turn this into a fully functioning e-commerce website. The features we are working on are: to add the listings to cart, check out, better image parsing. 
+If we have more time, we would like to turn this into a fully functioning e-commerce website. The features we are working on are: to add the listings to cart, check out, better image parsing, chat functions. 
 
 ## Sources
 
 Technology e-commerce marketplace
 https://makeschool.org/mediabook/oa/tutorials/make-tweets/start-an-express-project-z9Y=/
 
-## Heroku Deployed
+## Heroku Deployed Site
 
 https://smart-tech3.herokuapp.com/
 
