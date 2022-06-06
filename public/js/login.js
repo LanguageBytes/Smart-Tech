@@ -18,8 +18,7 @@ const loginFormHandler = async (event) => {
       document.location.replace("/");
     } else {
       document.getElementById("login-email").innerHTML =
-        "Credentials dont exist, signup instead";
-     
+        "Credentials do not exist, please create an account";
     }
   }
 };

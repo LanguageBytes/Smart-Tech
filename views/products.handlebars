@@ -1,15 +1,12 @@
 <div class="container">
-        <div class="row align-center">
+        
     <h3 class="align-center">Products</h3>
        {{#each products}}
-        <div>
-            <div class="deleteProducts">
+       <div class="row align-center">
             <div class="product-grid8">
                 <div class="product-image8">
-                 
-                        <img src= '{{image}}'>
+                        <img class ="image fit" src= '{{image}}'>
                   
-                   
                     <ul class="social">
                         <li><a href="" class="fa fa-shopping-bag"></a></li>
                         <li><a href="" class="fa fa-shopping-cart"></a></li>
@@ -17,17 +14,15 @@
                  
                 </div>
                 <div class="product-content">
-                   <h3 class="title"><a href="#">{{title}}</a></h3>
+                   <h3 class ="title"><a href="#">{{title}}</a></h3>
                     <span class="description">{{description}}</span>
                     <div class="price">£{{price}}
                     </div>
                     <a class="buy-icon" href="/">Back to homepage<i class="fa fa-angle-right icon"></i></a>
                      </div>
-                     <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
-                     </div>
-            
-    </div>      
-    </div>
+  <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
+</div>
+     <script src="./js/deleteProduct.js"></script>           
 </div>
 
 {{/each}}
