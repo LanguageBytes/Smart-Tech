@@ -1,7 +1,7 @@
 # <p align="center"> Smart Tech E-commerce Website </p>
 <br> 
  <p align="center">
-  <img src="gif here"/>
+  <img src="gif1.gif"/>
 </p>
 
 Smart tech is a simple e-commerce marketplace website on which users can advertise their own products to sell. The home page presents introduces the user to the concept of the site. The user is then encouraged to make an account by clicking on the log in page. The user is able to create an account with a secure password so that they can access the full functionality of the website. The user should then be presented with a list of products listed on the site to browse through. A user is able to add a product with a title, description, price and photo. When the user clicks the submit button, their product will be displayed amongst the listings on the site. 

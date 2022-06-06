@@ -2,6 +2,7 @@ const apiKey = 'pub_7963ae1c89dc3ab50d1289e5f9f2201dfe26'
 const apiUrl = `https://newsdata.io/api/1/news?apikey=pub_7963ae1c89dc3ab50d1289e5f9f2201dfe26&category=technology`
 console.log(apiUrl);
 
+
       for (var i = 0; i < news.results.length; i++) {
        let resultArea = document.getElementById("results");
        let resultCard = document.createElement("div");
@@ -21,4 +22,4 @@ console.log(apiUrl);
         resultCard.append(linkEl);
     
 
-            
+      }
