@@ -39,6 +39,7 @@ router.post("/newAdd", (req, res) => {
   }
   
   Product.create({
+    id: req.params.id,
     title: req.body.title,
     description: req.body.description,
     price: req.body.price,
@@ -49,23 +50,16 @@ router.post("/newAdd", (req, res) => {
 });
 
 
-router.delete("/:id", withAuth, async (req, res) => {
+router.delete('/:id', withAuth, async (req,res) => {
   try {
-    const productsData = await Product.destroy({
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
-
-    if (!productsData) {
-      res.status(404).json({ message: "No project found with this id!" });
-      return;
-    }
-
-    res.status(200).json(productsData);
-  } catch (err) {
-    res.status(500).json(err);
+      const deleteProduct = await Product.destroy({
+          where: {
+              id: req.params.id,
+          }
+      });
+      res.status(200).json(deleteProduct);
+  } catch (error) {
+      res.status(400).json(error);
   }
 });
 
