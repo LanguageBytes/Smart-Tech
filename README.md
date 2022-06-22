@@ -71,12 +71,10 @@ Run the following commands in the terminal:
 
 If we have more time, we would like to turn this into a fully functioning e-commerce website. The features we are working on are: to add the listings to cart, check out, better image parsing, chat functions. 
 
-## Sources
-
-Technology e-commerce marketplace
-https://makeschool.org/mediabook/oa/tutorials/make-tweets/start-an-express-project-z9Y=/
 
 ## Heroku Deployed Site
 
 https://smart-tech3.herokuapp.com/
+
+
 
