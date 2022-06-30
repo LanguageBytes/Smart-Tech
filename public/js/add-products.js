@@ -6,8 +6,6 @@ const newFormHandler = async (event) => {
   const price = document.querySelector("#price").value.trim();
   const image = document.querySelector("#image").value.trim();
 
-
-
   if (title && description && price) {
     const response = await fetch(`/api/products/newAdd`, {
       method: "POST",
@@ -16,8 +14,8 @@ const newFormHandler = async (event) => {
         description,
         price,
         image,
-       
       }),
+      
       headers: {
         "Content-Type": "application/json",
       },

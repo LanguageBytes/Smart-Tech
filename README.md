@@ -27,8 +27,6 @@ THEN I am able to enter the details of the item I want to sell
 WHEN I click on the submit button
 THEN my product will be listed on the page
 
-
-
 ```
 
 ## Installation
